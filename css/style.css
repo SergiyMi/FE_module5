@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:700|Roboto");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+/* ==========================menu============================== */
+.upper {
+  padding-top: 24px;
+  margin-bottom: 90px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.logo-container {
+  float: left;
+  min-height: 37px;
+}
+
+.logo {
+  font-size: 30px;
+  text-transform: uppercase;
+  float: left;
+  text-decoration: none;
+  font-family: "Roboto";
+  color: rgb(81, 81, 81);
+}
+
+.logo::first-letter {
+  color: rgb(26, 188, 156);
+}
+
+.logo:hover,
+.logo:focus {
+  color: rgb(26, 188, 156);
+}
+
+.menu-container {
+  float: right;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  float: right;
+}
+
+.menu-item {
+  list-style-type: none;
+  font-family: "OpenSans";
+  float: left;
+  min-height: 37px;
+  line-height: 37px;
+  font-size: 14px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(81, 81, 81);
+}
+
+.menu-item:nth-of-type(n) {
+  margin-left: 30px;
+}
+
+.menu-item:first-of-type {
+  margin-left: 0;
+}
+
+.menu-item a:hover,
+.menu-item a:focus {
+  color: rgb(26, 188, 156);
+}
+
+/* =========================main=========================== */
+
+/* ========================section-1================================= */
+
+.container-main {
+  height: 1170px;
+}
+
+.section-size {
+  width: auto;
+  position: relative;
+}
+
+.image-slider {
+  width: 100%;
+  height: 602px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.dark-effect {
+  width: 100%;
+  height: 602px;
+  background-color: rgb(0, 0, 2);
+  opacity: 0.522;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider-button {
+  width: 104px;
+  height: 104px;
+  top: 218px;
+  background-color: rgb(26, 188, 156);
+  opacity: 0.651;
+  position: absolute;
+  border-style: none;
+  padding: 0;
+}
+
+.slider-button:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  border-right: 2px solid blue;
+  border-bottom: 2px solid blue;
+  background: transparent;
+}
+
+.btn-left {
+  margin-left: 30px;
+}
+
+.left-row {
+  transform: rotate(135deg);
+}
+
+.btn-right {
+  right: 0;
+  margin-right: 30px;
+}
+
+.right-row {
+  transform: rotate(-45deg);
+}
+
+.slider-content {
+  position: absolute;
+  min-width: 745px;
+  top: 218px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Roboto";
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.slider-title {
+  font-size: 60px;
+  margin: 0;
+  margin-bottom: 38px;
+  color: #fff;
+}
+
+.slider-text {
+  font-size: 30px;
+  margin: 0;
+  color: #fff;
+}
+
+/* ========================background-section-2================================= */
+.bg-section {
+  position: relative;
+  left: 0;
+  right: 0;
+  background-color: rgb(233, 240, 253);
+  opacity: 0.5;
+  height: 670px;
+  top: 602px;
+}
+
+/* ======================section-2======================== */
+
+.section-card-size {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 752px;
+}
+
+.container-down-card {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.container-down-card-title {
+  font-size: 48px;
+  font-family: "Roboto";
+  color: rgb(81, 81, 81);
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 102px;
+}
+
+.container-down-card-title::after {
+  content: "";
+  background-color: rgb(26, 188, 156);
+  width: 164px;
+  min-height: 7px;
+  display: block;
+  margin: 32px auto;
+}
+
+.card-container {
+  margin-bottom: 102px;
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.card {
+  min-width: 255px;
+  height: 322px;
+  float: left;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-image > img {
+  width: 255px;
+  height: 282px;
+  display: block;
+}
+
+.card-image-modal {
+  background-color: rgb(0, 0, 0);
+  opacity: 0;
+  position: absolute;
+  left: 10px;
+  top: 11px;
+  right: 10px;
+  bottom: 11px;
+  z-index: 15;
+}
+
+.card:hover .card-image-modal {
+  opacity: 0.549;
+}
+.card:hover .card-icon-container {
+  opacity: 0.7;
+}
+
+.card-icon-container {
+  opacity: 0;
+  background-color: rgb(50, 50, 50);
+  position: absolute;
+  text-align: center;
+  left: 10px;
+  top: 11px;
+  right: 10px;
+  bottom: 11px;
+  z-index: 25;
+  padding-top: calc(50% - 51px);
+}
+
+.card-icon-container:hover .icon-btn {
+  opacity: 1;
+}
+
+.transform {
+  display: inline-block;
+}
+
+.icon-btn {
+  position: relative;
+  background: transparent;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  vertical-align: top;
+  z-index: 35;
+  opacity: 0;
+}
+
+.icon-btn:nth-of-type(2) {
+  margin-left: 6px;
+}
+.icon-btn:nth-of-type(3) {
+  margin-left: 6px;
+  margin-bottom: 6px;
+}
+
+.icon-like {
+  position: absolute;
+  right: 12px;
+  bottom: calc(50% - 12px);
+}
+
+.icon-btn-like:hover {
+  background-color: rgb(26, 188, 156);
+}
+
+.icon-link {
+  position: absolute;
+  right: 12px;
+  bottom: calc(50% - 12px);
+}
+
+.icon-btn-link:hover {
+  background-color: rgb(26, 188, 156);
+}
+
+.icon-clock {
+  position: absolute;
+  right: 12px;
+  bottom: calc(50% - 12px);
+}
+
+.icon-btn-clock:hover {
+  background-color: rgb(26, 188, 156);
+}
+
+.icon-btn-add {
+  width: 164px;
+}
+
+.icon-btn-add:hover {
+  background-color: rgb(26, 188, 156);
+}
+
+.icon-add {
+  position: absolute;
+  left: 6px;
+  bottom: calc(50% - 12px);
+}
+
+.icon-add-text {
+  position: absolute;
+  font-size: 14px;
+  font-family: "OpenSans";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  left: 55px;
+  top: 16px;
+}
+
+.card-text {
+  background-color: rgb(50, 50, 50);
+  height: 40px;
+  font-size: 18px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+.card-title {
+  float: left;
+  padding-left: 14px;
+  width: 201px;
+  min-height: 40px;
+  line-height: 40px;
+}
+
+.card-price {
+  padding-left: 14px;
+  float: right;
+  background-color: rgb(115, 119, 119);
+  width: 54px;
+  min-height: 40px;
+  line-height: 40px;
+}
+
+.card:hover .card-title {
+  background-color: rgb(26, 188, 156);
+}
+
+.card:hover .card-price {
+  background-color: rgb(26, 188, 156);
+  opacity: 0.439;
+  color: rgb(255, 255, 255);
+}
+
+/* ======================footer============================= */
+
+.footer-size {
+  background-color: rgb(50, 50, 50);
+  width: auto;
+  height: 88px;
+}
+
+.footer-container {
+  height: 88px;
+  position: relative;
+  margin-top: 102px;
+}
+
+.footer-text {
+  position: absolute;
+  left: calc(50% - 192px);
+  font-size: 16px;
+  font-family: "OpenSans";
+  color: rgb(254, 254, 254);
+  text-transform: capitalize;
+}
