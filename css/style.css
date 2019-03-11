@@ -157,8 +157,8 @@ body {
   margin: 0 auto;
   width: 40px;
   height: 40px;
-  border-right: 2px solid blue;
-  border-bottom: 2px solid blue;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
   background: transparent;
 }
 
@@ -288,14 +288,15 @@ body {
 
 .card:hover .card-image-modal {
   opacity: 0.549;
+  z-index: 0;
 }
 .card:hover .card-icon-container {
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .card-icon-container {
   opacity: 0;
-  background-color: rgb(50, 50, 50);
+  /* background-color: rgb(50, 50, 50); */
   position: absolute;
   text-align: center;
   left: 10px;
@@ -342,6 +343,7 @@ body {
 
 .icon-btn-like:hover {
   background-color: rgb(26, 188, 156);
+  opacity: 1;
 }
 
 .icon-link {
